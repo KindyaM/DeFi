@@ -3,7 +3,7 @@ import path from 'path';
 
 export default function handler(req, res) {
   // Read from cloned Gensyn repo
-  const dataPath = path.join(process.cwd(), 'paper-rl-swarm/data/swarm_logs.json');
+  const dataPath = path.join(process.cwd(), 'EncodeAI/paper-rl-swarm/data/swarm_logs.json');
   const rawData = fs.readFileSync(dataPath);
   const swarmData = JSON.parse(rawData);
 
